@@ -8,6 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+//O(n) time and O(1) space
 class Solution {
     public int length(ListNode head){
         ListNode temp = head;
