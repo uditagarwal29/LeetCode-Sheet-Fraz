@@ -43,7 +43,7 @@ class Solution {
         ListNode start = head;
         ListNode end = mid;
         ListNode start2 = mid.next;
-        mid.next=null;
+        mid.next=null; //making end pointer of part 1 point to null
         
         //reordering
         // start element from part 2 of list is taken and placed in part 1
