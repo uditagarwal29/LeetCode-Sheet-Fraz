@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// TLE last case
+
 int main()
 {
     vector<int> nums{1, 2, 3, 4, 5};
@@ -50,3 +50,49 @@ int main()
 
     cout << "Count : " << count << endl;
 }
+
+//Brute Force
+// class Solution {
+// public:
+//     int subarraySum(vector<int>& nums, int k) {
+//     //calculate cumulative sum
+//     vector<int> csum;
+//     csum.push_back(0);
+//     int tempsum = 0;
+//     for (int i = 0; i < nums.size(); i++)
+//     {
+//         tempsum += nums[i];
+//         csum.push_back(tempsum);
+//     }
+
+
+//     int p1 = 1;
+//     int p2 = 1;
+//     int currSum = 0;
+//     int count = 0;
+//     while (p1 <= nums.size())
+//     {
+        
+//         currSum = csum[p2] - csum[p1 - 1];
+//         if (currSum == k)
+//         {
+//             count++;
+//             p2++;
+//         }
+        
+//         else
+//         {
+//             p2++;
+//         }
+        
+//         if (p2 > nums.size())
+//         {
+//             p1++;
+//             p2 = p1;
+//         }
+
+//     }
+  
+//         return count;
+//     }
+// };
